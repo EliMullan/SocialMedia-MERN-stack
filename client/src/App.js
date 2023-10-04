@@ -1,4 +1,5 @@
 import {Outlet, Navigate, Route, Routes, useLocation} from 'react-router-dom';
+import {Home, Login, Profile, Register, ResetPassword} from './pages/index';
 
 //When user logs in will have access to their protected route 
 function Layout() {
