@@ -1,9 +1,11 @@
 import {Outlet, Navigate, Route, Routes, useLocation} from 'react-router-dom';
 import {Home, Login, Profile, Register, ResetPassword} from './pages/index';
+import { useSelector } from 'react-redux';
+
 
 //When user logs in will have access to their protected route 
 function Layout() {
-  const user = null;
+  const user = useSelector(state=>state.user);
   const location = useLocation();
 
   return user?.token ? (
@@ -14,8 +16,10 @@ function Layout() {
 }
 
 function App() {
+  const {theme} = useSelector(state => state.theme); 
+
   return (
-    <div className="w-full min-h-[100vh]">
+    <div data-theme={theme} className="w-full min-h-[100vh]">
        <Routes>
          {/* protected routes */}
          <Route element={<Layout />}>
