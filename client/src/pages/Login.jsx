@@ -100,15 +100,17 @@ const Login = () => {
             )}
           </form>
 
-          <p className="text-ascent-2 text-sm text-center">
-            Don&apos;t have an account ?
-          </p>
-          <Link
-            to="/register"
-            className="text-sm text-right text-blue font-semibold"
-          >
-            Create Account
-          </Link>
+         <div className='flex justify-between'>
+         <p className="text-ascent-2 text-sm text-center">
+         Don&apos;t have an account ?
+       </p>
+       <Link
+         to="/register"
+         className="text-sm text-right text-blue font-semibold"
+       >
+         Create Account
+       </Link>
+         </div>
         </div>
         {/* RIGHT */}
         <div className="hidden w-1/2 h-full lg:flex flex-col items-center justify-center bg-blue">
