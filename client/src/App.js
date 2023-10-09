@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 //When user logs in will have access to their protected route 
 function Layout() {
-  const user = useSelector(state=>state.user);
+  const user = useSelector(state=>state.user.user);
   const location = useLocation();
 
   return user?.token ? (
@@ -29,7 +29,7 @@ function App() {
          { /* unprotected routes */}
          <Route path='/register' element={<Register />}/>
          <Route path='/login' element={<Login />}/>
-         <Route path='reset-password' element={<ResetPassword />} />
+         <Route path='/reset-password' element={<ResetPassword />} />
        </Routes>       
     </div>
   );
