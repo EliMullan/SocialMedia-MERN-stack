@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { NoProfile } from "../assets";
+import { NoProfile } from "../assets/index";
 import { LiaEditSolid } from "react-icons/lia";
 import {
   BsPersonFillAdd,
