@@ -56,7 +56,7 @@ const TopBar = () => {
       <div className="flex gap-4 items-center text-ascent-1 text-md md:text-xl ">
         <button onClick={() => handleTheme()}>
           {" "}
-          {theme === "light" ? <BsMoon /> : <BsSun />}
+          {theme === "light" ? <BsMoon /> : <BsSun />}    
         </button>
         <div className="hidden lg:flex">
           <IoMdNotificationsOutline />
