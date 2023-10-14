@@ -13,8 +13,7 @@ import { FaTwitterSquare } from "react-icons/fa";
 import { UpdateProfile } from "../redux/userSlice";
 import moment from "moment";
 
-const ProfileCard = ({ user }) => {
-  user = user.user; // this is my patching , not in the tutorial
+const ProfileCard = ({ user }) => {  
   const { user: data, edit } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
